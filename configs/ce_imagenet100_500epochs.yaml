@@ -1,0 +1,31 @@
+# config_imagenet100_500.yaml
+dataset: imagenet100
+model: resnet50
+epochs: 500
+batch_size: 256  # per GPU
+learning_rate: 0.1  # will be auto-scaled based on world_size
+
+# Learning rate schedule - decay at 333, 400, 450 epochs
+lr_decay_epochs: "333,400,450"
+lr_decay_rate: 0.1
+
+# Warmup settings
+warm: true
+warm_epochs: 10
+
+# Other hyperparameters
+weight_decay: 1e-4
+momentum: 0.9
+cosine: true
+normalize: false
+syncBN: true
+
+# Logging and saving
+save_freq: 50
+print_freq: 50
+
+# Loss-specific parameters
+loss: "CE"  # options: "CE", "NormFace", "NTCE", "NONL"
+temperature: 0.2
+symmetric: false
+bidirectional: false

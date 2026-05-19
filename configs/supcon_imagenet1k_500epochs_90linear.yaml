@@ -1,0 +1,52 @@
+# ImageNet-1K Supervised Contrastive Configuration (SCL)
+dataset: imagenet1k
+batch_size: 256
+model: resnet50
+
+# SupCon specific settings
+method: SupCon
+loss: SCL
+temperature: 0.1
+
+# Contrastive Training phase
+supcon_epochs: 500
+supcon_weight_decay: 0.0001
+supcon_momentum: 0.9
+# Learning rate auto-calculated based on batch_size * world_size
+
+# Linear evaluation phase
+linear_epochs: 90
+linear_learning_rate: 0.8
+linear_lr_decay_epochs: "30,60,80"
+linear_lr_decay_rate: 0.2
+linear_weight_decay: 0
+linear_momentum: 0.9
+
+# Training behavior
+cosine: true
+syncBN: false
+warm: true
+warm_epochs: 5
+warmup_from: 0.01
+warmup_to: 0.8
+
+# System settings
+num_workers: 16
+print_freq: 10
+save_freq: 50
+seed: 42
+deterministic: false
+
+# Phase control
+skip_supcon: false
+skip_linear: false
+supcon_ckpt: ""
+
+# Metrics computation
+compute_metrics_freq: 10
+always_compute_final_metrics: true
+
+# Logging
+wandb_project: "nc_by_design"
+# wandb_entity: set via --wandb_entity or env var
+trial: "0"

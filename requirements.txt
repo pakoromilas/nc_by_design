@@ -1,0 +1,7 @@
+numpy
+scipy
+PyYAML
+torch
+torchvision
+tensorboard
+wandb
