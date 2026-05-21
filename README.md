@@ -1,7 +1,7 @@
 # Neural Collapse by Design: Learning Class Prototypes on the Hypersphere
 
 [![ICML 2026](https://img.shields.io/badge/ICML-2026-blue)](https://icml.cc/Conferences/2026)
-[![Paper](https://img.shields.io/badge/paper-PDF-red)](#citation)
+[![Paper](https://img.shields.io/badge/paper-PDF-red)](https://arxiv.org/abs/2605.20302)
 [![License](https://img.shields.io/badge/license-BSD--2--Clause-yellow)](LICENSE)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.10%2B-orange)](https://pytorch.org/)
 
