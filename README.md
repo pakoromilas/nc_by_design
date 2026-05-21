@@ -93,11 +93,14 @@ This runs SCL pretraining (Phase 1), then evaluates the encoder three ways: fixe
 ## Citation
 
 ```bibtex
-@inproceedings{koromilas2026neural,
-  title     = {Neural Collapse by Design: Learning Class Prototypes on the Hypersphere},
-  author    = {Koromilas, Panagiotis and Giannakopoulos, Theodoros and Nicolaou, Mihalis A. and Panagakis, Yannis},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
-  year      = {2026},
+@misc{koromilas2026neuralcollapsedesignlearning,
+      title={Neural Collapse by Design: Learning Class Prototypes on the Hypersphere}, 
+      author={Panagiotis Koromilas and Theodoros Giannakopoulos and Mihalis A. Nicolaou and Yannis Panagakis},
+      year={2026},
+      eprint={2605.20302},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.20302}, 
 }
 ```
 
